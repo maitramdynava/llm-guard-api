@@ -366,6 +366,7 @@ def register_routes(
                         input_scanners,
                         request.prompt,
                         config.app.scan_fail_fast,
+                        request.entity_types
                     ),
                     timeout=config.app.scan_prompt_timeout,
                 )
